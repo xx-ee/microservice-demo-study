@@ -1,0 +1,18 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: microservice-provider-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    instance-id: microservice-provider9001  #自定义服务名称信息
+    prefer-ip-address: true #访问路径可以显示IP地址
+
+info:
+  app.name: microservice-privder-9001
+  company.name: www.baidu.com
+  build.artifactId: $project.artifactId$
+  build.version:  $project.version$

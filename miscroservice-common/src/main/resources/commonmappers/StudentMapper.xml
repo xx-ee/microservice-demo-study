@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.microservice.common.mapper.StudentMapper">
+  <resultMap id="BaseResultMap" type="com.microservice.common.model.Student">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="sid" jdbcType="VARCHAR" property="sid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="score" jdbcType="VARCHAR" property="score" />
+  </resultMap>
+</mapper>
