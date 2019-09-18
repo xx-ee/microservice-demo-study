@@ -1,0 +1,15 @@
+#集群模式Eureka
+server:
+  port: 8002  #服务端口号
+eureka:
+  client:
+    service-url:
+      #相互注册，组成一个集群，实现高可用
+      defaultZone: http://eureka8001:8001/eureka/,http://eureka8003:8003/eureka/
+  instance:
+    #主机名
+    hostname: eureka8002
+spring:
+  application:
+    #服务名称
+    name: eureka-availability-server

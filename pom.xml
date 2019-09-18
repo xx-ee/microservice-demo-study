@@ -118,6 +118,9 @@
         <module>microservice-eureka</module>
         <module>miscroservice-common</module>
         <module>microservice-provider</module>
+        <module>microservice-consumer</module>
+        <module>microservice-eureka8002</module>
+        <module>microservice-eureka8003</module>
     </modules>
 
     <build>
