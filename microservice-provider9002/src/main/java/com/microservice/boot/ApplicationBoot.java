@@ -1,7 +1,6 @@
 package com.microservice.boot;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,6 +9,7 @@ import org.springframework.stereotype.Component;
 import tk.mybatis.spring.annotation.MapperScan;
 
 import javax.annotation.PostConstruct;
+
 @ImportResource(locations = {"classpath:spring/*/*.xml"})
 @MapperScan("com.microservice.common.mapper")
 @Component("microservice-eureka")

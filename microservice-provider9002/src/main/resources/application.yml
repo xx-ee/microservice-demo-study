@@ -1,12 +1,12 @@
 server:
-  port: 9001
+  port: 9002
 spring:
   application:
     name: microservice-provider
   datasource:
       type: com.alibaba.druid.pool.DruidDataSource
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/cloud01?useUnicode=true&autoReconnect=true
+      url: jdbc:mysql://localhost:3306/cloud02?useUnicode=true&autoReconnect=true
       username: root
       password: root
       #连接池补充
@@ -35,11 +35,11 @@ eureka:
     service-url:
       defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
   instance:
-    instance-id: microservice-provider9001  #自定义服务名称信息
+    instance-id: microservice-provider9002  #自定义服务名称信息
     prefer-ip-address: true #访问路径可以显示IP地址
 
 info:
-  app.name: microservice-privder-9001
+  app.name: microservice-privder-9002
   company.name: www.baidu.com
   build.artifactId: $project.artifactId$
   build.version:  $project.version$

@@ -4,69 +4,101 @@ import javax.persistence.*;
 
 @Table(name = "student")
 public class Student {
+    /**
+     * 主键
+     */
     @Id
+    @Column(name = "stu_no")
     @GeneratedValue(generator = "JDBC")
-    private String sid;
-
-    private String name;
-
-    private String sex;
-
-    private String score;
+    private String stuNo;
 
     /**
-     * @return sid
+     * 学生姓名
      */
-    public String getSid() {
-        return sid;
+    @Column(name = "stu_name")
+    private String stuName;
+
+    /**
+     * 学生所在班级
+     */
+    @Column(name = "stu_class")
+    private String stuClass;
+
+    /**
+     * 来源数据库
+     */
+    @Column(name = "db_source")
+    private String dbSource;
+
+    /**
+     * 获取主键
+     *
+     * @return stu_no - 主键
+     */
+    public String getStuNo() {
+        return stuNo;
     }
 
     /**
-     * @param sid
+     * 设置主键
+     *
+     * @param stuNo 主键
      */
-    public void setSid(String sid) {
-        this.sid = sid;
+    public void setStuNo(String stuNo) {
+        this.stuNo = stuNo;
     }
 
     /**
-     * @return name
+     * 获取学生姓名
+     *
+     * @return stu_name - 学生姓名
      */
-    public String getName() {
-        return name;
+    public String getStuName() {
+        return stuName;
     }
 
     /**
-     * @param name
+     * 设置学生姓名
+     *
+     * @param stuName 学生姓名
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setStuName(String stuName) {
+        this.stuName = stuName;
     }
 
     /**
-     * @return sex
+     * 获取学生所在班级
+     *
+     * @return stu_class - 学生所在班级
      */
-    public String getSex() {
-        return sex;
+    public String getStuClass() {
+        return stuClass;
     }
 
     /**
-     * @param sex
+     * 设置学生所在班级
+     *
+     * @param stuClass 学生所在班级
      */
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setStuClass(String stuClass) {
+        this.stuClass = stuClass;
     }
 
     /**
-     * @return score
+     * 获取来源数据库
+     *
+     * @return db_source - 来源数据库
      */
-    public String getScore() {
-        return score;
+    public String getDbSource() {
+        return dbSource;
     }
 
     /**
-     * @param score
+     * 设置来源数据库
+     *
+     * @param dbSource 来源数据库
      */
-    public void setScore(String score) {
-        this.score = score;
+    public void setDbSource(String dbSource) {
+        this.dbSource = dbSource;
     }
 }

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservice-provider</artifactId>
+    <artifactId>microservice-provider9002</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -71,4 +71,5 @@
             <version>1.0.0</version>
         </dependency>
     </dependencies>
+
 </project>

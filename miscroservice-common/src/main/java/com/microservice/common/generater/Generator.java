@@ -8,15 +8,7 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @ProjectName: profile-demo
- * @Package: com.pds.common.generate
- * @ClassName: Generator
- * @Author: dong
- * @Description: ${description}
- * @Date: 2019/9/10 15:45
- * @Version: 1.0
- */
+
 public class Generator {
     public static void main(String[] args) throws Exception {
         List<String> warnings = new ArrayList<String>();

@@ -17,7 +17,7 @@
 			<!--<property name="endingDelimiter" value="`"/> -->
 		</plugin>
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-						connectionURL="jdbc:mysql://192.168.64.128:3306/test_db"
+						connectionURL="jdbc:mysql://localhost:3306/cloud01"
 						userId="root"
 						password="root">
 		</jdbcConnection>
@@ -30,7 +30,7 @@
 
 
 		<table tableName="student">
-			<generatedKey column="sid" sqlStatement="JDBC" />
+			<generatedKey column="stu_no" sqlStatement="JDBC" />
 		</table>
 	</context>
 </generatorConfiguration>

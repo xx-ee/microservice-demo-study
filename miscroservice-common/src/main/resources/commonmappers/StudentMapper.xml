@@ -5,9 +5,9 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="sid" jdbcType="VARCHAR" property="sid" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="sex" jdbcType="VARCHAR" property="sex" />
-    <result column="score" jdbcType="VARCHAR" property="score" />
+    <id column="stu_no" jdbcType="VARCHAR" property="stuNo" />
+    <result column="stu_name" jdbcType="VARCHAR" property="stuName" />
+    <result column="stu_class" jdbcType="VARCHAR" property="stuClass" />
+    <result column="db_source" jdbcType="VARCHAR" property="dbSource" />
   </resultMap>
 </mapper>
