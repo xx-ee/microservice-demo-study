@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@FeignClient(value = "MICROSERVICE-PROVIDER")
+//@FeignClient(value = "MICROSERVICE-PROVIDER")
+//服务降级
+@FeignClient(value = "MICROSERVICE-PROVIDER",fallbackFactory = ConsumerClientServiceFallbackFactory.class)
 public interface ConsumerClientService
 {
     @RequestMapping("provider/all")
