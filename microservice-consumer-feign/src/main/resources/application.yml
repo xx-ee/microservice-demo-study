@@ -7,4 +7,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
-
+ribbon:
+  eureka:
+    enable: true
