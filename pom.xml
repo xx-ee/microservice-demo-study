@@ -131,6 +131,7 @@
         <module>microservice-provider9003</module>
         <module>microservice-consumer-feign</module>
         <module>microservice-provider-hystrix</module>
+        <module>microservice-consumer-hystrix-dashboard</module>
     </modules>
 
     <build>

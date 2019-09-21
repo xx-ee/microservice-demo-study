@@ -42,7 +42,7 @@ public class HelloWorldController {
         return this.client;
     }
 
-    @RequestMapping("provider/all")
+    @RequestMapping("/provider/all")
     public List<Student> getAllStudents()
     {
         return studentService.getAll();
