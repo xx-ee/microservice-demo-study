@@ -1,0 +1,77 @@
+#spring:
+#  profiles:
+#    active:
+#    - dev
+#---
+#spring:
+#  profiles: dev         #开发环境
+#  application: microservice-config-dev
+#---
+#spring:
+#     profiles: test      #测试环境
+#     application:
+#       name: microservice-config-test
+#
+##保存为utf-8格式
+#
+#spring:
+#  profiles:
+#    active:
+#    - dev
+#---
+#server:
+#   port: 5001
+#spring:
+#   profiles: dev
+#   application:
+#     name: microservice-config-client
+#   eureka:
+#     client:
+#       service-url:
+#         defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
+#---
+#server:
+#  port: 5002
+#spring:
+#  profiles: test
+#  application:
+#    name: microservice-config-client
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
+
+
+
+
+
+spring:
+  profiles:
+    active:
+    - dev
+
+---
+
+server:
+  port: 5001
+spring:
+  profiles: dev
+  application:
+    name: microservice-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
+
+---
+
+server:
+  port: 5002
+spring:
+  profiles: test
+  application:
+    name: microservice-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
