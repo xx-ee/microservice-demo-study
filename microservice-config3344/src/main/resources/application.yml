@@ -1,10 +1,12 @@
 server:
   port: 3344
+
 spring:
   application:
-    name: microservice-config
+    name: microservice-config-server
   cloud:
     config:
       server:
         git:
           uri: git@github.com:Simple-Coder/microservice-config.git #github上的仓库地址
+

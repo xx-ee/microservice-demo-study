@@ -135,6 +135,8 @@
         <module>microservice-zuul-gateway9527</module>
         <module>microservice-config3344</module>
         <module>microservice-config-client3355</module>
+        <module>microservice-config-eureka8001</module>
+        <module>microservice-config-provider9001</module>
     </modules>
 
     <build>
