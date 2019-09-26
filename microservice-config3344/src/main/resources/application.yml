@@ -8,5 +8,27 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:Simple-Coder/microservice-config.git #github上的仓库地址
+          uri: https://github.com/Simple-Coder/microservice-config.git #github上的仓库地址
+          search-paths: /**
+          username: xxxx@yourmail.com     #用户名
+          password: yourpassword          #密码
+      label: master
+  rabbitmq:
+    host: 39.98.190.54    #公网地址
+    port: 5672
+    username: guest
+    password: guest
+
+#SpringCloud暴露接口，暴露/bus/refresh接口
+management:
+  security:
+    enabled: false
+
+#开启基本的权限，默认为true
+security:
+  basic:
+    enabled: false
+
+
+
 

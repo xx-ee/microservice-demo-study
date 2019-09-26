@@ -137,6 +137,7 @@
         <module>microservice-config-client3355</module>
         <module>microservice-config-eureka8001</module>
         <module>microservice-config-provider9001</module>
+        <module>microservice-single-eureka8761</module>
     </modules>
 
     <build>

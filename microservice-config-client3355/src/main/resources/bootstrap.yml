@@ -4,5 +4,13 @@ spring:
       name: microservice-config-client   #需要从github上读取的资源名称，注意没有yml名称
       profile: test                       #本次访问的配置项
       label: master
-      uri: http://config3344.com:3344       #本服务启动后先去找3344服务，通过SpringCloudConfig获取github的服务地址
+      uri: http://39.98.190.54:3344       #本服务启动后先去找3344服务，通过SpringCloudConfig获取github的服务地址
+  rabbitmq:
+    host: 39.98.190.54                #公网ip
+    port: 5672
+    username: guest
+    password: guest
 
+security:
+  basic:
+    enabled: false
